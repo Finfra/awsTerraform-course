@@ -1,6 +1,5 @@
 # terraform-course.
 * Terraform Version : v1.8.3
-* Orignal Source form : [https://github.com/wardviaene/terraform-course](https://github.com/wardviaene/terraform-course) for  [Udemy course about Terraform](https://www.udemy.com/learn-devops-infrastructure-automation-with-terraform/?couponCode=TERRAFORM_GIT)
 * Update by Steve J.South [NamJungGu] <nowage@gmail.com>
 
 # Usage
@@ -75,3 +74,6 @@ cmd='aws ec2 delete-key-pair --key-name mykey
 '
 echo "alias dk=\"echo '$cmd';$cmd\"">>/etc/bash.bashrc
 ```
+
+# Orignal Source 
+* [https://github.com/wardviaene/terraform-course](https://github.com/wardviaene/terraform-course) for  [Udemy course about Terraform](https://www.udemy.com/learn-devops-infrastructure-automation-with-terraform/?couponCode=TERRAFORM_GIT)
