@@ -4,7 +4,7 @@
 # 주의
 * 아래와 같이 홈 폴더에 instance.tf파일을 복사 후 사용하세요. 과거 실습시 수강자가 자신의 레포지터리에 fork후 실습하다가 push하여 키가 공개되는 사고가 여러번 있었음.
 ```
-cd ~/terraform-course/01-FirstSteps
+cd ~/awsTerraform-course/01-FirstSteps
 cp instance.tf ~/
 ```
 
