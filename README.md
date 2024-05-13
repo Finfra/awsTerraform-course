@@ -5,8 +5,8 @@
 # Usage
 ```
 cd
-git clone https://github.com/Finfra/terraform-coursehttps://github.com/Finfra/terraform-course
-cd terraform-course/01-FirstSteps
+git clone https://github.com/Finfra/terraform-coursehttps://github.com/Finfra/awsTerraform-course
+cd awsTerraform-course/01-FirstSteps
 cat README.md
 ```
 
