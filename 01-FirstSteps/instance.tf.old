@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "eu-west-1"
+  access_key = "xxxxxxxxxxxxxxxxxxxx"
+  secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  region     = "eu-west-1"
 }
 
 resource "aws_instance" "example" {
