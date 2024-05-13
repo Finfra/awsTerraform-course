@@ -4,7 +4,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/19-AutoscalingWithELB
+cd awsTerraform-course/19-AutoscalingWithELB
 ```
 
 2. init 및 apply

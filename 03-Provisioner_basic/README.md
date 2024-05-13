@@ -10,7 +10,7 @@
 ```
 aws configure
 
-cd terraform-course/03-Provisioner_basic
+cd awsTerraform-course/03-Provisioner_basic
 ```
 
 2. 변수 셋팅 파일 생성 후 실행

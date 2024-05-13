@@ -6,7 +6,7 @@
 1. Key 생성 및 폴더로 이동
 ```
 ssh-keygen -f ~/.ssh/id_rsa -N ''
-cd terraform-course/Project
+cd awsTerraform-course/Project
 ```
 
 2. init 및 apply

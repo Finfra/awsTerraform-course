@@ -4,7 +4,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/
+cd awsTerraform-course/
 ```
 
 2. 실행전 확인

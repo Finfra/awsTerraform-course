@@ -4,7 +4,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/17-IAMRolesWithS3Bucket
+cd awsTerraform-course/17-IAMRolesWithS3Bucket
 ```
 
 2. init 및 apply

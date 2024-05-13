@@ -7,7 +7,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/12-Ec2EBS
+cd awsTerraform-course/12-Ec2EBS
 ```
 
 2. init 및 apply

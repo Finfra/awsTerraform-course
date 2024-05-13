@@ -4,7 +4,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/18-Autoscaling
+cd awsTerraform-course/18-Autoscaling
 whoami
 ```
 

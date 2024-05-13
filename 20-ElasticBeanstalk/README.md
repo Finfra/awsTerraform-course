@@ -4,7 +4,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/20-ElasticBeanstalk
+cd awsTerraform-course/20-ElasticBeanstalk
 ```
 
 2. init 및 apply

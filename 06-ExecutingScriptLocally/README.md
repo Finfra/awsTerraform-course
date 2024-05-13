@@ -5,7 +5,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/06-ExecutingScriptLocally
+cd awsTerraform-course/06-ExecutingScriptLocally
 ```
 
 2. init 및 apply

@@ -6,7 +6,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/13-UserdataAndCloudinit
+cd awsTerraform-course/13-UserdataAndCloudinit
 ```
 
 2. init 및 apply

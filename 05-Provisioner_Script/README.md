@@ -5,7 +5,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/05-Provisioner_Script
+cd awsTerraform-course/05-Provisioner_Script
 ```
 
 2. init 및 apply

@@ -18,7 +18,7 @@ bash ~/.bashrc
 
 1. 해당 폴더로 이동
 ```
-cd terraform-course/02-FirstSteps_files
+cd awsTerraform-course/02-FirstSteps_files
 cp -r ../.terraform ./       # 필수 아님
 ```
 2. 변수 셋팅 파일 생성 후 실행

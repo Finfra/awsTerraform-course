@@ -7,7 +7,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/08-DataSource
+cd awsTerraform-course/08-DataSource
 ```
 
 2. 현재 'from_eu_west'라는  Security Groups이 없다는 것을 확인

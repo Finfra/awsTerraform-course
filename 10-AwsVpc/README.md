@@ -6,7 +6,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/10-AwsVpc
+cd awsTerraform-course/10-AwsVpc
 ```
 
 2. 생성전 확인 사항

@@ -4,7 +4,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/11-Ec2VpcSecuritygroup
+cd awsTerraform-course/11-Ec2VpcSecuritygroup
 ```
 2. 생성전 확인 사항
 * VPC

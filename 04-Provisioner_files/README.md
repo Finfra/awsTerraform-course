@@ -13,7 +13,7 @@
 ```
 aws configure
 
-cd terraform-course/04-Provisioner_files
+cd awsTerraform-course/04-Provisioner_files
 ```
 
 2. ssh key 확인 및 init

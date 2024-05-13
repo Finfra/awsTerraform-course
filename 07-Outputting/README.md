@@ -5,7 +5,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd terraform-course/07-Outputting
+cd awsTerraform-course/07-Outputting
 ```
 * 주의 private_ips.txt 파일 있으면 지울 것
 
