@@ -23,8 +23,7 @@ vi backend.tf
 4. init
 ```
 terraform init
-   # Bucket의 Region명 입력
-terraform apply -auto-approve
+   # Bucket의 Region명 입력 : export AWS_REGION=eu-west-1
 ```
 
 5. apply
@@ -34,7 +33,7 @@ terraform apply -auto-approve
 
 5. Instance 생성 확인
 ```
-cat terraform.tfstate|grep public_ip
+cat terraform.tfstate|grep public_ip # 없음
 cat private_ips.txt
 ```
 

@@ -38,10 +38,11 @@ terraform apply -auto-approve
 ```
 ls .terraform/modules/consul/
 cat terraform.tfstate|grep public_ip
-ssh -i ~/mykey ubuntu@<ip1> hostname
+ssh -i ~/mykey ubuntu@<ip1> consul members
+ssh -i ~/mykey ubuntu@<ip1> curl localhost:8500/v1/catalog/nodes
 ssh -i ~/mykey ubuntu@<ip2> hostname
 ssh -i ~/mykey ubuntu@<ip3> hostname
-curl <ip>
+
 ```
 
 6. destroy

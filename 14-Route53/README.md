@@ -4,7 +4,7 @@
 # 실행 절차
 1. 폴더로 이동
 ```
-cd awsTerraform-course/
+cd awsTerraform-course/14-Route53
 ```
 
 2. init 및 apply

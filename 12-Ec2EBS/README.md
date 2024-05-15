@@ -34,7 +34,7 @@ ls /dev|grep xvd
 sudo -i
 fdisk /dev/xvdh
     # < 설정 > : n → p → <enter> → <enter>  → <enter> → p → w
-
+# cf) parted /dev/xvdh --script -- mklabel gpt mkpart primary ext4 1MiB 100%
 mkfs.ext4  /dev/xvdh1
 mkdir /data1
 mount /dev/xvdh1 /data1

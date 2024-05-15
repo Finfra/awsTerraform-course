@@ -4,7 +4,6 @@ resource "aws_vpc" "main" {
   instance_tenancy     = "default"
   enable_dns_support   = "true"
   enable_dns_hostnames = "true"
-  enable_classiclink   = "false"
   tags = {
     Name = "main"
   }
@@ -134,7 +133,7 @@ resource "aws_route_table_association" "main-private-3-a" {
 }
 # nat gw
 resource "aws_eip" "nat" {
-  vpc = true
+  domain = "vpc"
 }
 resource "aws_nat_gateway" "nat-gw" {
   allocation_id = aws_eip.nat.id
