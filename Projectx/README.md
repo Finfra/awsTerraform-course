@@ -51,3 +51,5 @@ aws ec2 delete-key-pair --key-name prjkey
 
 # ToDo
 * Security Group이 현재는 모두 열려 있는 상태, zone별로 통신 가능하게 할 것.
+
+
