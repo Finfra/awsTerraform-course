@@ -48,7 +48,17 @@ variable "engine_name" {
 
 variable "family" {
   description = "Family of the database"
-  default     = "mysql5.7"
+  default     = "mysql8.0"
+}
+
+variable "major_engine_version" {
+  description = "MAJOR.MINOR version of the DB engine"
+  default     = "8.0"
+}
+
+variable "engine_version" {
+  default     = "8.0"
+  description = "Version of the database to be launched"
 }
 
 variable "port" {
@@ -56,18 +66,8 @@ variable "port" {
   default     = 3306
 }
 
-variable "major_engine_version" {
-  description = "MAJOR.MINOR version of the DB engine"
-  default     = "5.7"
-}
-
-variable "engine_version" {
-  default     = "5.7.21"
-  description = "Version of the database to be launched"
-}
-
 variable "allocated_storage" {
-  default     = 5
+  default     = 10
   description = "Disk space to be allocated to the DB instance"
 }
 

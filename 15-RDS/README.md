@@ -17,10 +17,11 @@ cd awsTerraform-course/15-RDS
   - 삭제시 시간 갭이 있음. 빨리 하고 싶으면 다른 Region에서 실행 할 것.
 
 ```
+export TF_VAR_password=Nowage12
 terraform init
-terraform apply -auto-approve  -var password=Nowage12gkn
+terraform apply -auto-approve 
 ```
-
+* cf) terraform apply -auto-approve  -var password=Nowage12
 
 3. Instance 생성 확인
 * AWS Console → RDS
@@ -28,10 +29,10 @@ terraform apply -auto-approve  -var password=Nowage12gkn
 #sudo apt-get install -y mysql-client
 
 cat terraform.tfstate |grep endpoint
-mysql -uroot -h <url> -pNowage12gkn
+mysql -uroot -h <url> -pNowage12
   show databases;
   exit
-ssh -i ~/mykey ubuntu@<ip> hostname
+# 키 등록시 : ssh -i ~/mykey ubuntu@<ip> hostname
 ```
 
 * cf) Mysql Exmaple
