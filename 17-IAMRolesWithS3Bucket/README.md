@@ -23,7 +23,7 @@ terraform apply -auto-approve
 ```
 ip=$(cat terraform.tfstate |grep public_ip\"|awk 'BEGIN{FS="\""}{printf $4}')
   # =:= cat terraform.tfstate|grep public_ip
-ssh -i ~/mykey ubuntu@$ip hostname
+ssh ubuntu@$ip hostname
 
 sudo -s
 echo "test" > test.txt

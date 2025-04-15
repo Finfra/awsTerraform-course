@@ -25,7 +25,7 @@ terraform apply -auto-approve
   - Aws Console의 Ec2 instance에서 해당 Instance의 ip 혹은 url 확인
 ```
 
-ssh -i ~/mykey ubuntu@$<url>
+ssh ubuntu@$<url>
   # 인스턴스 아무거나에 접속해서
   sudo -i
   echo "$(hostname)">/var/www/html/index.html
@@ -40,5 +40,3 @@ curl my-elb-xxxxx.eu-west-1.elb.amazonaws.com  # 여러번하면 다른 IP보임
 ```
 terraform destroy -auto-approve
 aws ec2 delete-key-pair --key-name mykey
-
-```

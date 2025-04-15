@@ -22,7 +22,7 @@ terraform apply -auto-approve
 ```
 aws ec2 describe-instance-status --output table
 
-ssh -i ~/mykey ubuntu@<url>
+ssh ubuntu@<url>
   sudo apt update -y
   sudo apt install -y stress
   stress --cpu 2 --timeout 300

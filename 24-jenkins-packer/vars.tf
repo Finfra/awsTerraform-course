@@ -1,18 +1,28 @@
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "ap-northeast-2"
 }
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "~/mykey"
+  default = "~/.ssh/id_rsa"
 }
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "~/mykey.pub"
+  default = "~/.ssh/id_rsa.pub"
+}
+variable "INSTANCE_USERNAME" {
+  default = "ubuntu"
 }
 variable "AMIS" {
+  type = map(string)
   default = {
-    eu-west-1      = "ami-0dad359ff462124ca"
-    ap-northeast-2 = "ami-00edfb46b107f643c"
-    us-east-1      = "ami-085925f297f89fce1"
+    ap-northeast-2 = "ami-0c9c942bd7bf113a2"  # Ubuntu 20.04 LTS
   }
+}
+
+variable "APP_INSTANCE_AMI" {
+  default = "ami-0c9c942bd7bf113a2"  # Ubuntu 20.04 LTS
+}
+
+variable "APP_INSTANCE_COUNT" {
+  default = 1
 }
 
 variable "INSTANCE_DEVICE_NAME" {
@@ -23,8 +33,4 @@ variable "JENKINS_VERSION" {
 }
 variable "TERRAFORM_VERSION" {
   default = "0.11.7"
-}
-
-variable "APP_INSTANCE_COUNT" {
-  default = "0"
 }

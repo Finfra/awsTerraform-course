@@ -20,7 +20,7 @@ cp -r ../.terraform ./
 
 3. ssh key생성 및 init
 ```
-ssh-keygen -f ~/mykey
+ssh-keygen -f ~/.ssh/id_rsa -N ''
 terraform init
 ```
 
@@ -35,11 +35,9 @@ terraform apply -auto-approve
 cat terraform.tfstate|grep public_ip
 aws ec2 describe-instance-status --output table # aws configure 실행시만
 
-ssh -i ~/mykey ubuntu@<ip>
+ssh ubuntu@<ip>
 
 ```
 
 6. destroy
-```
-terraform destroy -auto-approve
 ```

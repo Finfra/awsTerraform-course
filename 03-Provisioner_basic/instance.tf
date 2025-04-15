@@ -1,21 +1,22 @@
-# cf1) aws configure
-# cf2) aws ec2 delete-key-pair --key-name mykey
-# ssh-keygen -f ~/mykey
 # terraform init
 # terraform plan -out /tmp/p.out
 # terraform apply -auto-approve
+# aws configure
+# aws ec2 delete-key-pair --key-name mykey
+# ssh-keygen -f ~/.ssh/id_rsa -N ''
+
 # cat terraform.tfstate|grep public_ip
-# ssh -i ~/mykey ubuntu@13.209.73.61
+# ssh -i ~/.ssh/id_rsa ubuntu@13.209.73.61
 
 # terraform destroy -auto-approve
 
 resource "aws_key_pair" "mykey" {
   key_name   = "mykey"
-  public_key = file("~/mykey.pub")
+  public_key = file("~/.ssh/id_rsa.pub")
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-03746875d916becc0"
+  ami           = "ami-061b8c3dd6a50d8e3"
   instance_type = "t2.micro"
   key_name      = aws_key_pair.mykey.key_name
   root_block_device{
@@ -23,14 +24,16 @@ resource "aws_instance" "example" {
   }
 
   connection {
+    host        = self.public_ip
     user        = "ubuntu"
-    private_key = file("mykey")
+    private_key = file("~/.ssh/id_rsa")
   }
+
   tags = {
     Name = "My Instance"
   }
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "ap-northeast-2"
 }

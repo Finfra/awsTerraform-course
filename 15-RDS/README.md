@@ -32,7 +32,7 @@ cat terraform.tfstate |grep endpoint
 mysql -uroot -h <url> -pNowage12
   show databases;
   exit
-# 키 등록시 : ssh -i ~/mykey ubuntu@<ip> hostname
+# 키 등록시 : ssh ubuntu@<ip> hostname
 ```
 
 * cf) Mysql Exmaple

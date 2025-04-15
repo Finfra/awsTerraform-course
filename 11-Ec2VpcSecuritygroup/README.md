@@ -27,11 +27,8 @@ terraform apply -auto-approve
 * 생성된 instance에서 사용하는 Security Group allow-ssh의 내역 확인
 ```
 cat terraform.tfstate|grep public_ip
-ssh -i ~/mykey ubuntu@<ip> hostname
+ssh ubuntu@<ip> hostname
 ```
 
 5. destroy
-```
-terraform destroy -auto-approve
-aws ec2 delete-key-pair --key-name mykey
 ```

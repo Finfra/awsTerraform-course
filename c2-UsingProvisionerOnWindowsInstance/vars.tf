@@ -1,7 +1,7 @@
 variable "AWS_ACCESS_KEY" {}
 variable "AWS_SECRET_KEY" {}
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "ap-northeast-2"
 }
 variable "AMIS" {
   default = {
@@ -12,10 +12,10 @@ variable "AMIS" {
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "~/mykey"
+  default = "~/.ssh/id_rsa"
 }
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "~/mykey.pub"
+  default = "~/.ssh/id_rsa.pub"
 }
 variable "INSTANCE_USERNAME" {
   default = "Terraform"

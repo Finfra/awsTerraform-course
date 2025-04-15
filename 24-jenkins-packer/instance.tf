@@ -9,7 +9,7 @@ resource "aws_instance" "jenkins-instance" {
   vpc_security_group_ids = [aws_security_group.jenkins-securitygroup.id]
 
   # the public SSH key
-  key_name = aws_key_pair..key_name
+  key_name = aws_key_pair.key_name
 
   # user data
   user_data = data.template_cloudinit_config.cloudinit-jenkins.rendered
@@ -17,7 +17,7 @@ resource "aws_instance" "jenkins-instance" {
 }
 
 resource "aws_ebs_volume" "jenkins-data" {
-    availability_zone = "eu-west-1a"
+    availability_zone = "ap-northeast-2a"
     size = 20
     type = "gp2" 
     tags = {
@@ -32,17 +32,14 @@ resource "aws_volume_attachment" "jenkins-data-attachment" {
   skip_destroy = true
 }
 
-resource "aws_instance" "app-instance" {
-  count = var.APP_INSTANCE_COUNT
-  ami = var.APP_INSTANCE_AMI
+resource "aws_instance" "app" {
+  count         = var.APP_INSTANCE_COUNT
+  ami           = var.APP_INSTANCE_AMI
   instance_type = "t2.micro"
-
-  # the VPC subnet
-  subnet_id = aws_subnet.main-public-1.id
-
-  # the security group
-  vpc_security_group_ids = [aws_security_group.app-securitygroup.id]
-
-  # the public SSH key
-  key_name = aws_key_pair..key_name
+  key_name      = aws_key_pair.key_name
+  subnet_id     = aws_subnet.main-public-1.id
+  vpc_security_group_ids = [aws_security_group.app-instance.id]
+  tags = {
+    Name = "app-instance-${count.index}"
+  }
 }

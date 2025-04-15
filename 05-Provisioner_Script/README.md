@@ -19,7 +19,7 @@ terraform apply -auto-approve
 ```
 cat terraform.tfstate|grep public_ip
 cat script.sh
-ssh -i ~/mykey ubuntu@<ip> hostname
+ssh ubuntu@<ip> hostname
 curl <ip>
 ```
 
@@ -27,5 +27,3 @@ curl <ip>
 ```
 terraform destroy -auto-approve
 aws ec2 delete-key-pair --key-name mykey
-
-```

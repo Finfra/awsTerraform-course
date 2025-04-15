@@ -18,7 +18,7 @@ cd awsTerraform-course/04-Provisioner_files
 
 2. ssh key 확인 및 init
 ```
-ls ~/mykey
+ls ~/.ssh/id_rsa
 terraform init
 ```
 
@@ -50,12 +50,9 @@ terraform apply -auto-approve
 ```
 cat terraform.tfstate|grep public_ip
 
-ssh -i ~/mykey ubuntu@<ip> hostname
+ssh ubuntu@<ip> hostname
 ```
 
 6. destroy
 ```
-terraform destroy -auto-approve
-aws ec2 delete-key-pair --key-name mykey
-
-```
+ssh-keygen

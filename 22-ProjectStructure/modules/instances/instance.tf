@@ -11,7 +11,7 @@ variable "PUBLIC_SUBNETS" {
 variable "VPC_ID" {}
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "~/mykey.pub"
+  default = "~/.ssh/id_rsa.pub"
 }
 
 data "aws_ami" "ubuntu" {
