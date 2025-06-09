@@ -23,7 +23,7 @@ vi backend.tf
 4. init
 ```
 terraform init
-   # Bucket의 Region명 입력 : export AWS_REGION=eu-west-1
+   # Bucket의 Region명 입력 : export AWS_REGION=ap-northeast-2
 ```
 
 5. apply

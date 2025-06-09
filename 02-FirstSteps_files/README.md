@@ -11,7 +11,7 @@
 vi ~/.bashrc
 #export TF_VAR_AWS_ACCESS_KEY="xxxxxxx"
 #export TF_VAR_AWS_SECRET_KEY="xxxxxxxxxxxxxxx"
-#export TF_VAR_AWS_REGION="eu-west-1"
+#export TF_VAR_AWS_REGION="ap-northeast-2"
 
 bash ~/.bashrc
 ```
@@ -26,7 +26,7 @@ cp -r ../.terraform ./       # 필수 아님
 vi ~/keySetting.sh
 #export TF_VAR_AWS_ACCESS_KEY="xxxxxxx"
 #export TF_VAR_AWS_SECRET_KEY="xxxxxxxxxxxxxxx"
-#export TF_VAR_AWS_REGION="eu-west-1"
+#export TF_VAR_AWS_REGION="ap-northeast-2"
 
 bash keySetting.sh
 ```
