@@ -1,6 +1,7 @@
 # terraform-course.
 * Terraform Version : v1.8.3
 * Update by Steve J.South [NamJungGu] <nowage@gmail.com>
+* PPT(ko) : https://github.com/Finfra/awsTerraform-course/blob/main/AWS_Terraform_Infrastructure_as_Code.pdf
  
 # Usage
 ```
